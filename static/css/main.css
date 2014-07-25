@@ -44,3 +44,69 @@ header.global .nav-courseware {
       .location-all li a {
         color: #004b88;
         text-decoration: none; }
+        
+footer#footer {
+  background: #004b88;
+  width: 100%;
+  padding: 30px 0 0 0; }
+  footer#footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  footer#footer .areas-block {
+    float: left;
+    width: 30%; }
+    footer#footer .areas-block figure {
+      float: left;
+      width: 88px;
+      margin-top: 9px; }
+      footer#footer .areas-block figure img {
+        width: 88px; }
+    footer#footer .areas-block ul {
+      border-left: 1px solid #6ca1cd;
+      float: left;
+      margin-left: 20px;
+      padding: 10px 0 20px 0; }
+      footer#footer .areas-block ul li {
+        font: 20px/27px "Roboto Condensed", sans-serif;
+        color: #fff;
+        padding-left: 20px; }
+        footer#footer .areas-block ul li a {
+          color: #fff;
+          text-decoration: none; }
+  footer#footer .footer-col {
+    width: 16%;
+    margin-left: 1.5%;
+    float: left; }
+    footer#footer .footer-col h2 {
+      font: 20px/27px "Roboto Condensed", sans-serif;
+      color: #fff;
+      margin: 15px 0; }
+    footer#footer .footer-col ul li {
+      font: 12px/18px "Open Sans", sans-serif; }
+      footer#footer .footer-col ul li a {
+        color: #f0f0f0;
+        text-decoration: none; }
+        footer#footer .footer-col ul li a:hover {
+          text-decoration: underline; }
+  footer#footer #footer-bottom {
+    background: #003f73;
+    margin: 65px 0 0 0;
+    padding: 15px 0;
+    height: 32px; }
+    footer#footer #footer-bottom .terms {
+      float: left; }
+      footer#footer #footer-bottom .terms li {
+        font: 13px/15px "Open Sans", sans-serif; }
+        footer#footer #footer-bottom .terms li a {
+          color: #fff;
+          text-decoration: none; }
+    footer#footer #footer-bottom p {
+      float: left;
+      font: 13px/16px "Open Sans", sans-serif;
+      color: #fff;
+      margin: 0 20px 0 21%; }
+    footer#footer #footer-bottom address {
+      font: normal 13px/16px "Open Sans", sans-serif;
+      float: right;
+      color: #fff; }

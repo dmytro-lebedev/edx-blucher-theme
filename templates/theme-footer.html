@@ -1,26 +1,76 @@
 ## mako
-<%! from django.core.urlresolvers import reverse %>
 <%namespace name='static' file='/static_content.html'/>
-<%! from datetime import datetime %>
-<%! from pytz import UTC %>
 
 <div class="wrapper-footer">
-  <footer>
-    <div class="colophon">
-      <nav class="nav-colophon">
-        <ol>
-          <li><a href="${reverse('tos')}">Terms of Service</a></li>
-          <li><a href="${reverse('tos')}#privacy">Privacy Policy</a></li>
-          <li><a href="${reverse('tos')}#honor">Honor Code</a></li>
-          <li><a href="${reverse('tos')}#copyright">Copyright</a></li>
-          <li><a href="${reverse('about_edx')}#careers">Careers</a></li>
-          <li><a href="${reverse('about_edx')}#contact">Contact</a></li>
-          <li><a href="${marketing_link('FAQ')}">Help</a></li>
-        </ol>
-      </nav>
+  <footer id="footer">
+    <div class="wp">
+      <div class="areas-block">
+        <figure><img src="${static.url('themes/blucher/images/logo-footer.png')}" alt="Blucher"></figure>
+        <ul>
+          <li><a href="">Livros</a></li>
+          <li><a href="">Proceedings</a></li>
+          <li><a href="">Open Access</a></li>
+          <li><a href="">EAD</a></li>
+          <li><a href="">Biblioteca Digital</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Sobre a Blucher</h2>
+        <ul>
+          <li><a href="">Sobre a Editora</a></li>
+          <li><a href="">Missão e Valores</a></li>
+          <li><a href="">Prêmios</a></li>
+          <li><a href="">Contato</a></li>
+          <li><a href="">Trabalhe Conosco</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Comunicação</h2>
+        <ul>
+          <li><a href="">Mídias Sociais</a></li>
+          <li><a href="">Assessoria de Imprensa</a></li>
+          <li><a href="">Marca</a></li>
+          <li><a href="">Contato</a></li>
+          <li><a href="">Lançamentos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Para você</h2>
+        <ul>
+          <li><a href="">Professor</a></li>
+          <li><a href="">Aluno</a></li>
+          <li><a href="">Leitor</a></li>
+          <li><a href="">Autor</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Para Instituições</h2>
+        <ul>
+          <li><a href="">Biblioteca</a></li>
+          <li><a href="">Livraria</a></li>
+          <li><a href="">Sociedade e Associação</a></li>
+          <li><a href="">Instituição de Ensino</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="references">
-      <span>Built on <a href="http://code.edx.org">OpenEdX</a>.</span>
+
+    <div class="clear"></div>
+    
+    <div id="footer-bottom">
+      <div class="wp">
+        <ul class="terms">
+          <li><a href="">Termos de Uso</a></li>
+          <li><a href="">Política de Privacidade</a></li>
+        </ul>
+        <p>Copyright 2013 - Editora Blucher<br> Todos os direitos reservados.</p>
+        <address>
+          Rua Pedroso Alvarenga 1245 4º andar - São Paulo, SP 04531-012<br>Telefone: (11) 3078 - 5366
+        </address>
+      </div>
     </div>
   </footer>
 </div>

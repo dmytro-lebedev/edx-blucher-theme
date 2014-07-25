@@ -20,7 +20,7 @@ header.global .nav-courseware {
     background: #d2d6d8;
     color: #003f73; }
   .location-expand {
-    background: url(../img/location-arrow.png) no-repeat 0px 0px;
+    background: url('../themes/blucher/images/location-arrow.png) no-repeat 0px 0px;
     width: 16px;
     height: 14px;
     display: block;

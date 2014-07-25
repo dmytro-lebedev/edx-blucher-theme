@@ -89,34 +89,35 @@ site_status_msg = get_site_status_msg(course_id)
         </ol>
       % endif
     % else:
-    <ol class="left nav-global">
-      <%block name="navigation_global_links">
-        % if microsite.get_value('ENABLE_MKTG_SITE', settings.FEATURES.get('ENABLE_MKTG_SITE', False)):
-          <li class="nav-global-01">
-            <a href="${marketing_link('HOW_IT_WORKS')}">${_("How it Works")}</a>
-          </li>
-          <li class="nav-global-02">
-            <a href="${marketing_link('COURSES')}">${_("Courses")}</a>
-          </li>
-          <li class="nav-global-03">
-            <a href="${marketing_link('SCHOOLS')}">${_("Schools")}</a>
-          </li>
-        % endif
-      </%block>
-    </ol>
-
-    <ol class="right nav-courseware">
-      % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
-          % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
-          <li class="nav-global-04">
-            <a class="cta cta-register" href="${reverse('course-specific-register', args=[course.id.to_deprecated_string()])}">${_("Register Now")}</a>
-          </li>
-          % else:
-          <li class="nav-global-04">
-            <a class="cta cta-register" href="/register">${_("Register Now")}</a>
-          </li>
+    <div style="float: right;">
+      <ol class="left nav-global">
+        <%block name="navigation_global_links">
+          % if microsite.get_value('ENABLE_MKTG_SITE', settings.FEATURES.get('ENABLE_MKTG_SITE', False)):
+            <li class="nav-global-01">
+              <a href="${marketing_link('HOW_IT_WORKS')}">${_("How it Works")}</a>
+            </li>
+            <li class="nav-global-02">
+              <a href="${marketing_link('COURSES')}">${_("Courses")}</a>
+            </li>
+            <li class="nav-global-03">
+              <a href="${marketing_link('SCHOOLS')}">${_("Schools")}</a>
+            </li>
           % endif
-      % endif
+        </%block>
+        % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
+            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
+            <li class="nav-global-04">
+              <a class="cta cta-register" href="${reverse('course-specific-register', args=[course.id.to_deprecated_string()])}">${_("Register Now")}</a>
+            </li>
+            % else:
+            <li class="nav-global-04">
+              <a class="cta cta-register" href="/register">${_("Register Now")}</a>
+            </li>
+            % endif
+        % endif
+      </ol>
+  
+      <ol class="right nav-courseware">
       <li class="nav-courseware-01">
         % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
             % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
@@ -126,7 +127,8 @@ site_status_msg = get_site_status_msg(course_id)
             % endif
         % endif
       </li>
-    </ol>
+      </ol>
+    </div>
     % endif
   </nav>
 </header>

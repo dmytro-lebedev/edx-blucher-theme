@@ -1,0 +1,45 @@
+header.global .nav-courseware {
+  margin-left: 15px;
+}
+
+.location {
+  border-left: 1px solid #6ca1cd;
+  position: relative;
+  float: left;
+  padding: 3px 0 0 5px;
+  height: 65px;
+  /*&.open &-all {display:block;}*/ }
+  .location-current {
+    font: 36px/36px "Roboto Condensed", sans-serif;
+    cursor: pointer;
+    color: #fff;
+    padding: 13px 25px 13px 16px;
+    position: relative;
+    width: auto; }
+  .location.open .location-current {
+    background: #d2d6d8;
+    color: #003f73; }
+  .location-expand {
+    background: url(../img/location-arrow.png) no-repeat 0px 0px;
+    width: 16px;
+    height: 14px;
+    display: block;
+    float: right;
+    position: relative;
+    top: -21px;
+    right: -8px; }
+  .location.open .location-expand {
+    background-position: 0px -20px; }
+  .location-all {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: #d2d6d8;
+    list-style: none;
+    padding: 16px;
+    z-index: 2; }
+    .location-all li {
+      font: 26px "Roboto Condensed", sans-serif; }
+      .location-all li a {
+        color: #004b88;
+        text-decoration: none; }

@@ -70,10 +70,11 @@ footer#footer .areas-block {
       margin-left: 20px;
       padding: 10px 0 20px 0; }
       footer#footer .areas-block ul li {
-        font: 20px/27px "Roboto Condensed", sans-serif  !important;
+        font: 20px/27px "Roboto Condensed", sans-serif;
         color: #fff;
         padding-left: 20px; }
         footer#footer .areas-block ul li a {
+          font: 20px/27px "Roboto Condensed", sans-serif !important;
           color: #fff;
           text-decoration: none; }
   footer#footer .footer-col {
@@ -95,7 +96,7 @@ footer#footer .areas-block {
   footer#footer #footer-bottom {
     background: #003f73;
     margin: 230px 0 0 0;
-    padding: 15px 30px 15px 60px;
+    padding: 15px 30px 15px 0;
     height: 32px; }
     footer#footer #footer-bottom .terms {
       float: left; }

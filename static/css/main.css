@@ -49,11 +49,13 @@ footer#footer {
   background: #004b88;
   width: 100%;
   padding: 30px 0 0 0; }
+  footer#footer .wp {
+    padding-left: 60px; }
   footer#footer ul {
     list-style: none;
     margin: 0;
     padding: 0; }
-  footer#footer .areas-block {
+footer#footer .areas-block {
     float: left;
     width: 30%; }
     footer#footer .areas-block figure {
@@ -68,7 +70,7 @@ footer#footer {
       margin-left: 20px;
       padding: 10px 0 20px 0; }
       footer#footer .areas-block ul li {
-        font: 20px/27px "Roboto Condensed", sans-serif;
+        font: 20px/27px "Roboto Condensed", sans-serif  !important;
         color: #fff;
         padding-left: 20px; }
         footer#footer .areas-block ul li a {
@@ -80,6 +82,7 @@ footer#footer {
     float: left; }
     footer#footer .footer-col h2 {
       font: 20px/27px "Roboto Condensed", sans-serif;
+      text-transform: none;
       color: #fff;
       margin: 15px 0; }
     footer#footer .footer-col ul li {
@@ -91,8 +94,8 @@ footer#footer {
           text-decoration: underline; }
   footer#footer #footer-bottom {
     background: #003f73;
-    margin: 65px 0 0 0;
-    padding: 15px 0;
+    margin: 230px 0 0 0;
+    padding: 15px 30px 15px 60px;
     height: 32px; }
     footer#footer #footer-bottom .terms {
       float: left; }
